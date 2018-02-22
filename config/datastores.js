@@ -49,6 +49,7 @@ module.exports.datastores = {
     *                                                                          *
     ***************************************************************************/
     adapter: 'sails-postgresql',
+    url: 'postgres://comom@localhost:5432/comom'
 
   },
 

@@ -47,7 +47,7 @@ module.exports = {
     var guestData = JSON.stringify(newRegistration, null, 2);
 
     const notifyEmailPromise = sails.helpers.sendTemplateEmail({
-      to: 'vajogaspar@gmail.com',
+      to: 'info@comom.hu',
       subject: 'Új regisztráció',
       template: 'registration/email-new-registration',
       templateData: {
