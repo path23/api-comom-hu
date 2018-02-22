@@ -5,11 +5,13 @@
   "description": "Comom.hu Popup Day API",
   "keywords": [],
   "dependencies": {
+    "async": "2.0.1",
+    "lodash": "3.10.1",
     "sails": "^1.0.0-37",
     "sails-hook-orm": "^2.0.0-16",
     "sails-hook-sockets": "^1.4.0",
-    "lodash": "3.10.1",
-    "async": "2.0.1"
+    "sails-postgresql": "^1.0.0-12",
+    "sails-stdlib": "^0.11.2"
   },
   "devDependencies": {
     "eslint": "3.5.0"

@@ -13,6 +13,16 @@ module.exports.bootstrap = function(done) {
 
   // It's very important to trigger this callback method when you are finished
   // with the bootstrap!  (otherwise your server will never lift, since it's waiting on the bootstrap)
+
+  sails.stdlib = require('sails-stdlib');
+
+  sails.stdlib('mailgun').configure({
+    secret: sails.config.custom.mailgunSecret,
+    domain: sails.config.custom.mailgunDomain,
+    from: sails.config.custom.fromEmailAddress,
+    fromName: sails.config.custom.fromName,
+  });
+
   return done();
 
 };
